@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p class="subtitle">User stories survey form</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter E-Mail">
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience:</label>
+                <input type="number" id="experience" placeholder="Enter Number">
+            </div>
+
+            <div class="form-group">
+                <label>Are you comfortable in investing in real estate or platform without first investigating properly?</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="investigation" value="yes" checked>
+                        <span class="radio-custom"></span>
+                        Yes
+                    </label>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <h3>Suggestions to build trusted platform</h3>
+                <label>You are ready to invest in:</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="investment" value="estate">
+                        <span class="checkbox-custom"></span>
+                        Estate
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="investment" value="cultural-funds">
+                        <span class="checkbox-custom"></span>
+                        Cultural Funds
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="investment" value="corpus-currency">
+                        <span class="checkbox-custom"></span>
+                        Corpus Currency
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="investment" value="stock-bonds">
+                        <span class="checkbox-custom"></span>
+                        Stock & Bonds
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Are you ready for further contact:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="contact" value="yes">
+                        <span class="radio-custom"></span>
+                        Yes
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="contact" value="no">
+                        <span class="radio-custom"></span>
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
